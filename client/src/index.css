@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --font-style: Arial, Helvetica, sans-serif;
+  --back-color: #fbfbfb;
+  --text-color: black;
+  --highlight-color: #0096c7;
+}
+
+* {
+  font-family: var(--font-style) !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--back-color);
+}
+
+@layer base {
+  button {
+    cursor: pointer;
+  }
+  input:not([type="checkbox"]) {
+    border: 1px solid #d1d5db;
+    border-radius: 1rem;
+    outline: none;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+  input:not([type="checkbox"]):focus {
+    box-shadow: 0 0 0 4px rgba(0, 150, 199, 0.15);
+    border-color: var(--highlight-color);
+  }
+  textarea {
+    outline: none;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    resize: none;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+    overflow-x: hidden;
+  }
+  textarea:focus {
+    box-shadow: 0 0 0 4px rgba(0, 150, 199, 0.15);
+    border-color: var(--highlight-color);
+  }
+}
