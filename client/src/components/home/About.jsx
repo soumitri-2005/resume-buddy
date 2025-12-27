@@ -4,7 +4,7 @@ import aboutImage from "../../assets/about-resumebuddy.png"; // replace with you
 const About = () => {
   return (
     <>
-      <section className="w-full min-h-[85vh] text-white flex flex-col md:flex-row justify-center items-center px-8 md:px-16 py-12 gap-10 bg-[var(--back-color)]">
+      <section id="about" className="w-full min-h-[85vh] text-white flex flex-col md:flex-row justify-center items-center px-8 md:px-16 py-12 gap-10 bg-[var(--back-color)]">
         {/* Left side - Image / Illustration */}
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="relative md:w-auto md:h-96 rounded-2xl overflow-hidden">
